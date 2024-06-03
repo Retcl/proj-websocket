@@ -1,0 +1,14 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Spring Boot-App<proj-websocket>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "ltd.jellyfish.App",
+            "projectName": "proj-websocket",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        }
+    ]
+}
