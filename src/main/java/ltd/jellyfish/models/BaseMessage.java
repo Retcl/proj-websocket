@@ -8,6 +8,8 @@ public class BaseMessage {
 
     private DeviceMessage deviceMessage;
 
+    private RewardMessage rewardMessage;
+
     public PositionMessage getPositionMessage() {
         return positionMessage;
     }
@@ -15,8 +17,6 @@ public class BaseMessage {
     public void setPositionMessage(PositionMessage positionMessage) {
         this.positionMessage = positionMessage;
     }
-
-    
 
     @Override
     public String toString() {
@@ -37,6 +37,14 @@ public class BaseMessage {
 
     public BaseMessage toObject(String json) {
         return (BaseMessage) JSON.parse(json);
+    }
+
+    public RewardMessage getRewardMessage() {
+        return rewardMessage;
+    }
+
+    public void setRewardMessage(RewardMessage rewardMessage) {
+        this.rewardMessage = rewardMessage;
     }
 
 }
